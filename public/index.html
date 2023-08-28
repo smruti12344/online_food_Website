@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/styles.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="container-header">
+            <div class="logo">
+                <h3>food</h3>
+            </div>
+            <div class="input">
+                <input type="text" value="" placeholder="search here.." id="inp" >
+                <span class="bi bi-search" onclick="changeTHem()"></span>
+            </div>
+            <div class="icons">
+              <span>Search </span><i class="bi bi-search" onclick="searchBar()" ondblclick="closeBar()"></i>
+              <span onclick="signIn()">login </span><i class="bi bi-person-fill" onclick="signIn()"></i> 
+                <span onclick="Menu()" >menu </span><i class="bi bi-list" onclick="Menu()"></i>
+                <span class="bi bi-cart-dash-fill"></span><i class="bi bi-cart-dash-fill"></i>
+            </div>
+    </header>
+    <!-- logIn-page -->
+    <div class="logIn">
+      <div>
+        <input type="button" class="btn btn-close" onclick="Close()">
+        <h2>Log In</h2>
+        
+      </div>
+      <input type="text" placeholder="Enter Your Name">
+      <input type="password" placeholder="Enter password">
+      <button onclick="Close()">Log In</button>
+     <div>
+      <a href="">Sign Up</a>
+     </div>
+    </div>
+    <div class="menu">
+      <input type="button" class="btn btn-close" onclick="MenuClose()">
+      <p>home</p>
+      <p>foods</p>
+      <p>blog</p>
+      <p>customer</p>
+    </div>
+
+    <!-- section -->
+<section class="container-main">
+    <div class="main-nav" >
+        <div class="text">
+            <h1>Delicious food.</h1>
+            <p>Bubby’s opened on Thanksgiving Day 1990. Chef / Owner Ron Silver began baking pies and selling them to restaurants and his neighbors out of a small kitchen at the corner of Hudson and North Moore St. in Tribeca. Today, NYC’s beloved restaurant and pie shop celebrates 27 years of classic, made from scratch American cooking.</p>
+             <button>Explore More</button>       
+        </div>
+       <img src="https://static.toiimg.com/photo/65489383.cms" alt="food-image" >
+    </div>
+
+    <!-- food-items -->
+    <div class="card-container" id="food">
+        <div class="head ">
+            <h1 class="text-center"> Our <span>Foods..</span></h1>
+        </div>
+       <div class="card-items d-flex flex-wrap justify-content-evenly">
+         <!-- carc-item1 -->
+       <div class="card">
+        <div class="card-img-top">
+            <img src="https://cdn.tasteatlas.com//images/toplistarticles/d0e6a0a79d5f4197a51f4ca065393ffe.jpg?w=375&h=280" alt="" srcset="">
+        </div>
+        <div class="card-header">
+            <p>Indian food.</p>
+        </div>
+          <div class="card-body">
+            <h3> Rs:&#8377;299</h3>
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="w-100 btn btn-success">Order Now</button>
+          </div>
+       </div>
+       <!-- card-item2 -->
+       <div class="card">
+        <div class="card-img-top">
+            <img src="https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg" alt="" srcset="">
+        </div>
+        <div class="card-header">
+            <p>Indian food.</p>
+        </div>
+          <div class="card-body">
+            <h3> Rs:&#8377;299</h3>
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="w-100 btn btn-success">Order Now</button>
+          </div>
+       </div>
+        <!-- card-item3 -->
+        <div class="card">
+            <div class="card-img-top">
+                <img src="https://www.fnp.com/images/pr/m/v20221205145750/chocolate-rose-designer-cake-1-kg-eggless.jpg" alt="" srcset="">
+            </div>
+            <div class="card-header">
+                <p>Indian food.</p>
+            </div>
+              <div class="card-body">
+                <h3> Rs:&#8377;299</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="w-100 btn btn-success">Order Now</button>
+              </div>
+           </div>
+            <!-- card-item4 -->
+            <div class="card">
+                <div class="card-img-top">
+                    <img src="https://i.pinimg.com/originals/14/61/c3/1461c3a1d553b0d243934b37a858d794.jpg" alt="" srcset="">
+                </div>
+                <div class="card-header">
+                    <p>Indian food.</p>
+                </div>
+                  <div class="card-body">
+                    <h3> Rs:&#8377;299</h3>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <button class="w-100 btn btn-success">Order Now</button>
+                  </div>
+               </div>
+        <!-- card-item5 -->
+        <div class="card">
+            <div class="card-img-top">
+                <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/02/indian-breakfast-recipes.jpg" alt="" srcset="">
+            </div>
+            <div class="card-header">
+                <p>Indian food.</p>
+            </div>
+              <div class="card-body">
+                <h3> Rs:&#8377;299</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="w-100 btn btn-success">Order Now</button>
+              </div>
+           </div>
+            <!-- card-item6 -->
+            <div class="card">
+                <div class="card-img-top">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqi9U1uIgm36UH5dF_YdtSY0cB--MWaMZpMw&usqp=CAU" alt="" srcset="">
+                </div>
+                <div class="card-header">
+                    <p>Indian food.</p>
+                </div>
+                  <div class="card-body">
+                    <h3> Rs:&#8377;299</h3>
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <button class="w-100 btn btn-success">Order Now</button>
+                  </div>
+               
+    </div>
+    </div>
+    </div>
+    <!-- blogs -->
+    <div class="blogs">
+        <div class="title">
+            <h1> Our <span>Blogs..</span></h1>
+        </div>
+       <div class="blog-item d-flex flex-wrap justify-content-around ">
+         <!-- blog-item1 -->
+       <div class="card">
+        <div class="card-img-top">
+            <img src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2F8c0ef296153b3b754f5770623631eff2.cdn.bubble.io%2Ff1484121503248x295303039252758000%2FCrispy_Corn__1_.jpg?w=512&h=&auto=compress&dpr=3&fit=max" alt="" srcset="">
+        </div>
+           <div class="card-header">
+            <h2> About indian food.</h2>
+           </div>
+          <div class="card-body">
+            <p>Having good restaurant reviews is crucial these days. It is not just making our decision to pick one easier, it is also helping the restaurant be more successful. You can quickly copy</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://www.vegrecipesofindia.com/recipes/">Read More</a>
+          </div>
+       </div>
+       <!-- blog-item2 -->
+       <div class="card">
+        <div class="card-img-top">
+            <img src="https://cdn.tasteatlas.com//images/toplistarticles/d0e6a0a79d5f4197a51f4ca065393ffe.jpg?w=375&h=280" alt="" srcset="">
+        </div>
+        <div class="card-header">
+            <h2> About indian food.</h2>
+           </div>
+          <div class="card-body">
+            <p>Having good restaurant reviews is crucial these days. It is not just making our decision to pick one easier, it is also helping the restaurant be more successful. You can quickly copy</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://www.vegrecipesofindia.com/recipes/">Read More</a>
+          </div>
+        
+       </div>
+        <!-- blog-item3 -->
+        <div class="card">
+            <div class="card-img-top">
+                <img src="https://www.fnp.com/images/pr/m/v20221205145750/chocolate-rose-designer-cake-1-kg-eggless.jpg" alt="" srcset="">
+            </div>
+            <div class="card-header">
+                <h2> About indian food.</h2>
+               </div>
+              <div class="card-body">
+               <p> Having good restaurant reviews is crucial these days. It is not just making our decision to pick one easier, it is also helping the restaurant be more successful. You can quickly copy</p>
+              </div>
+              <div class="card-footer">
+                <a href="https://www.vegrecipesofindia.com/recipes/">Read More</a>
+              </div>
+           </div>
+       </div>
+    </div>
+
+  <!-- customer Review -->
+    <div class="reviews">
+        <div>
+            <h1 class="title">Customer Reviews..</h1>
+        </div>
+        <div class="review-item d-flex flex-wrap justify-content-around w-100 ">
+            <!-- review-item1 -->
+          <div class="card customer">
+           <div class="card-img-top">
+               <img src="https://www.rri.res.in/sites/default/files/2022-09/Abhisek%20Tamang.jpg" alt="" srcset="">
+           </div>
+           <div class="card-header">
+            <h3>Excellent Food and Great Customer Service</h3>
+           </div>
+             <div class="card-body">
+                <p> Have been ordering food for delivery during lockdown and food quality has been very good with no compromises. Have ordered breakfast, lunch and dinner many times and taste has been always been very good and like home made. They are also ready to customize the food per your taste. Overall very satisfied and will continue to use their services.
+
+                </p>
+             </div>
+             <div class="card-footer">
+                <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+             </div>
+          </div>
+          <!-- review-item2 -->
+          <div class="card customer">
+           <div class="card-img-top">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc-RnyyfN8f3GBf2zCUIUbiFs-fuTwqZyokbG1bSlQubVrLD3ujLu1Onoep7fj_Vi2NmY&usqp=CAU" alt="" srcset="">
+           </div>
+           <div class="card-header">
+            <h3>Excellent Food and Great Customer Service</h3>
+           </div>
+             <div class="card-body">
+                <p> Have been ordering food for delivery during lockdown and food quality has been very good with no compromises. Have ordered breakfast, lunch and dinner many times and taste has been always been very good and like home made. They are also ready to customize the food per your taste. Overall very satisfied and will continue to use their services.
+
+                </p>             
+            </div>
+             <div class="card-footer">
+                <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+             </div>
+          </div>
+           <!-- review-item3 -->
+           <div class="card customer">
+               <div class="card-img-top">
+                   <img src="https://www.rri.res.in/sites/default/files/2022-09/Abhisek%20Tamang.jpg" alt="" srcset="">
+               </div>
+               <div class="card-header">
+                <h3>Excellent Food and Great Customer Service</h3>
+               </div>
+                 <div class="card-body">
+                    <p> Have been ordering food for delivery during lockdown and food quality has been very good with no compromises. Have ordered breakfast, lunch and dinner many times and taste has been always been very good and like home made. They are also ready to customize the food per your taste. Overall very satisfied and will continue to use their services.
+
+                </p>                 </div>
+                 <div class="card-footer">
+                    <div class="rating">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                 </div>
+              </div>
+          </div>
+         
+    </div>
+    <div class="butns">
+        <button  class="bi bi-chevron-bar-left" onclick="pre()"></button>
+        <button class="bi bi-chevron-bar-right" onclick="next()" ></button>
+     </div>
+    
+</section>
+<!-- footer -->
+
+<footer class="footer">
+    <div class="text">
+        <h1>about</h1>
+        <p>ddoekpdl</p>
+        <p>Service</p>
+        <p>Customer</p>
+        <p>Foods</p>
+    </div>
+    <div class="text">
+        <h1>about</h1>
+        <p>Product</p>
+        <p>Service</p>
+        <p>Customer</p>
+        <p>Foods</p>
+    </div>
+    <div class="text">
+        <h1>about</h1>
+        <p>Websites</p>
+        <p>Service</p>
+        <p>Customer</p>
+        <p>Foods</p>
+    </div>
+</footer>
+
+
+
+
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../src/js/food.js"></script>
+</body>
+</html>
