@@ -26,20 +26,38 @@
                 <span class="bi bi-cart-dash-fill"></span><i class="bi bi-cart-dash-fill"></i>
             </div>
     </header>
-    <!-- logIn-page -->
-    <div class="logIn">
-      <div>
-        <input type="button" class="btn btn-close" onclick="Close()">
-        <h2>Log In</h2>
-        
+  <div class="form-container" id="form-container">
+      <!-- logIn-page -->
+      <div class="logIn" id="login">
+        <div>
+          <input type="button" class="btn btn-close" onclick="Close()">
+          <h2>Log In</h2>
+          
+        </div>
+        <input type="text" placeholder="Enter Your Name">
+        <input type="password" placeholder="Enter password">
+        <button onclick="Close()">Log In</button>
+       <div>
+        <a href="#login" onclick="SignUpbtnClick()" >Sign Up</a>
+       </div>
       </div>
-      <input type="text" placeholder="Enter Your Name">
-      <input type="password" placeholder="Enter password">
-      <button onclick="Close()">Log In</button>
-     <div>
-      <a href="">Sign Up</a>
-     </div>
-    </div>
+      <!-- sign-up -page -->
+      <div class="sign-up" id="sign-up">
+        <div>
+          <input type="button" class="btn btn-close" onclick="CloseSignUp()">
+          <h2>Sign up</h2>
+          
+        </div>
+        <input type="text" placeholder="Enter Your Name">
+        <input type="password" placeholder="Enter password">
+        <input type="password" placeholder="confirm password">
+        <input type="email" name="email" placeholder="enter email">
+        <button onclick="CloseSignUp()">Sign up</button>
+       <div>
+        <a href=""  onclick="SignInbtnClick()">already have account?</a>
+       </div>
+      </div>
+  </div>
     <div class="menu">
       <input type="button" class="btn btn-close" onclick="MenuClose()">
       <p>home</p>
@@ -341,27 +359,25 @@
 <!-- footer -->
 
 <footer class="footer">
-    <div class="text">
-        <h1>about</h1>
-        <p>ddoekpdl</p>
-        <p>Service</p>
-        <p>Customer</p>
-        <p>Foods</p>
-    </div>
-    <div class="text">
-        <h1>about</h1>
-        <p>Product</p>
-        <p>Service</p>
-        <p>Customer</p>
-        <p>Foods</p>
-    </div>
-    <div class="text">
-        <h1>about</h1>
-        <p>Websites</p>
-        <p>Service</p>
-        <p>Customer</p>
-        <p>Foods</p>
-    </div>
+    <div class="contactus-form-container" id="contactme">
+      <div class="container">
+          <h1 class="contactus-heading">Contact me</h1>
+          <h3 class="contactus-subheading">Questions,thought,or just want to say hello?</h3>
+          <div class="contactus-form-container">
+              <form action="" class="form">
+                  <div class="form-field-container">
+                      <input type="text" name="name" placeholder="enter your name" class="form-field">
+                      <input type="text" name="email" placeholder="enter your email address" class="form-field">
+                      <input type="text" name="subject" placeholder="enter your subject" class="form-field">
+                      <textarea name="message" id="" cols="30" rows="10" placeholder="enter your message" class="form-field form-field-textarea"></textarea>
+                  </div>
+                  <div>
+                      <button class="btn-pink" id="submit-btn">Send Message<i class="bi bi-send"></i></button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
 </footer>
 
 
