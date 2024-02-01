@@ -9,7 +9,10 @@ function Close(){
     let formD = document.querySelector(".logIn");
     formD.style.display="none";
 }
-
+function CloseSignUp(){
+    let formD = document.querySelector(".sign-up");
+    formD.style.display="none";
+}
 // menu-btn
 
 function Menu(){
@@ -60,4 +63,13 @@ function pre(){
     }
     bar();
     console.log(count);
+}
+
+// sign-in
+function SignInbtnClick(){
+    document.getElementById("login").style.display="block";
+  }
+function SignUpbtnClick(){
+    document.getElementById("login").style.display="none";
+  document.getElementById("sign-up").style.display="block";
 }
